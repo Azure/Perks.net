@@ -57,7 +57,7 @@ Shipped as a nuget package that can be installed in a dotnet-cli project:
 
 ``` xml
   <ItemGroup>
-    <DotnetCliToolReference Include="Microsoft.Perks.CodeGen" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Perks.CodeGen" Version="1.0.0" />
   </ItemGroup>
 ```
 
