@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), common/common.proj ))/common/common.proj" />
+  <Import Project="$(common)common-package-references.proj" />
+  <Import Project="$(common)project-library.proj" />
+  <Import Project="$(common)transform-designer-cs.proj" />
+  <Import Project="$(common)package-info.proj" />
+  <Import Project="$(common)package-fallback.proj" />
+
+  <PropertyGroup Label="Configuration">
+    <RootNamespace>Microsoft.Perks</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)src/Microsoft.Perks/Microsoft.Perks.csproj" />
+    <ProjectReference Include="$(SolutionDir)src/Microsoft.Perks.Linq/Microsoft.Perks.Linq.csproj" />
+  </ItemGroup>
+</Project>
