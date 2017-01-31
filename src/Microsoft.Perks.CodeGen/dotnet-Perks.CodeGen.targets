@@ -1,0 +1,14 @@
+<Project>
+  <ItemGroup>
+    <DotnetRazor Include="**/*.cshtml" />
+  </ItemGroup>
+  <Target Name="DotnetRazor" BeforeTargets="CoreGenerateAssemblyInfo">
+    <PropertyGroup>
+      <RazorCommand>dotnet Perks.CodeGen</RazorCommand>
+    </PropertyGroup>
+    <Exec Command="$(RazorCommand) @(DotnetRazor) obj\Razor $(RootNamespace)" ConsoleToMSBuild="true">
+      <Output TaskParameter="ConsoleOutput" ItemName="Compile" />
+      <Output TaskParameter="ConsoleOutput" ItemName="FileWrites" />
+    </Exec>
+  </Target>
+</Project>
