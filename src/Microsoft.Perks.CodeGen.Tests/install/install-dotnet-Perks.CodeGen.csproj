@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyName>install-dotnet-Perks.CodeGen</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="**/*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="dotnet-Perks.CodeGen" Version="1.0.0"/>
+  </ItemGroup>
+</Project>
