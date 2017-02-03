@@ -49,7 +49,7 @@ Classes for a better LINQ experience in .NET
 
 ### Tools 
 
-#### Microsoft.Perks.CodeGen
+#### dotnet-Perks.CodeGen
 
 A simple razor-based code generation tool code that transforms `.cshtml` files into `.cs` files. 
 Shipped as a nuget package that can be installed in a dotnet-cli project:
@@ -57,7 +57,10 @@ Shipped as a nuget package that can be installed in a dotnet-cli project:
 
 ``` xml
   <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.Perks.CodeGen" Version="1.0.0" />
+    <DotNetCliToolReference Include="dotnet-Perks.CodeGen" Version="1.0.0" />
+    <PackageReference Include="dotnet-Perks.CodeGen" Version="1.0.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 ```
 
