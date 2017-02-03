@@ -1,24 +1,16 @@
 {
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
     "version": "0.1.0",
-    "command": "dotnet",
+    "command": "gulp",
     "isShellCommand": true,
-    "args": [],
-    "tasks": [
-        {
-            "taskName": "build",
-            "args": [
-                "${workspaceRoot}/Perks.sln", "/m:1"
-            ],
-            "isBuildCommand": true,
-            "problemMatcher": "$msCompile"
-        },
-         {
-            "taskName": "restore",
-            "args": [
-                "${workspaceRoot}/Perks.sln", "/m:1"
-            ],
-            "isBuildCommand": false,
-            "problemMatcher": "$msCompile"
-        }
-    ]
+    "args": ["--no-color"],
+    "showOutput": "always",
+    "tasks": [{
+        "taskName": "build",
+        "args": [],
+        "isBuildCommand": true,
+        "isWatching": false,
+        "problemMatcher": [ "$msCompile" ]
+    }]
 }

@@ -52,7 +52,7 @@ namespace Microsoft.Perks.CodeGen
             var fileNameNoExtension = Path.GetFileNameWithoutExtension(fileName);
             var targetFileName = Path.Combine(TargetDirectory, $"{cshtmlFilePath}.cs");
             System.Console.WriteLine(targetFileName);
-            var fullNamespace = $"Namespace.{basePath.Replace('/', '.').Replace('\\', '.')}";
+            var fullNamespace = $"{Namespace}.{basePath.Replace('/', '.').Replace('\\', '.')}";
 
             if (File.Exists(targetFileName) && File.GetLastWriteTimeUtc(targetFileName) >= File.GetLastWriteTimeUtc(cshtmlFilePath))
             {

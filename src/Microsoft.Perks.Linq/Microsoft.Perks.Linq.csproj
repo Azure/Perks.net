@@ -6,6 +6,10 @@
   <Import Project="$(common)package-info.proj" />
   <Import Project="$(common)package-fallback.proj" />
 
+  <PropertyGroup>
+    <Description>Microsoft.Perks.Linq is a collection of interesting classes for LINQ.</Description>  
+  </PropertyGroup>  
+
   <ItemGroup>
     <PackageReference Include="System.Reflection.TypeExtensions" Version="4.3.0" />
     

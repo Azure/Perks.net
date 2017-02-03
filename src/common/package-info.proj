@@ -1,14 +1,16 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Copyright>Copyright (c) Microsoft Corporation</Copyright>
+    <Company>Microsoft</Company>
 
     <PackageIconUrl>http://go.microsoft.com/fwlink/?LinkID=288890</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Azure/Perks</PackageProjectUrl>
     <PackageLicenseUrl>https://raw.githubusercontent.com/Microsoft/dotnet/master/LICENSE</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    
-    <_DelaySign_>true</_DelaySign_>
-    <_AssemblyOriginatorKeyFile_>../../../tools/MSSharedLibKey.snk</_AssemblyOriginatorKeyFile_>
-    <_SignAssembly_>true</_SignAssembly_>
+    <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
+    <DelaySign>True</DelaySign>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>$(SolutionDir)MSSharedLibKey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 </Project>

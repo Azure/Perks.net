@@ -6,4 +6,7 @@
   <Import Project="$(common)package-info.proj" />
   <Import Project="$(common)package-fallback.proj" />
 
+  <PropertyGroup>
+    <Description>Microsoft.Perks.Console is a collection of interesting classes for creating console apps.</Description>  
+  </PropertyGroup>  
 </Project>

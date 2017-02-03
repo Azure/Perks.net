@@ -8,6 +8,9 @@
 
   <PropertyGroup Label="Configuration">
     <RootNamespace>Microsoft.Perks</RootNamespace>
+
+    <Description>Microsoft.Perks.DependencyInjection is a simple dependency injection system.</Description>  
+
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="$(SolutionDir)src/Microsoft.Perks/Microsoft.Perks.csproj" />

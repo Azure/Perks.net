@@ -5,4 +5,7 @@
   <Import Project="$(common)transform-designer-cs.proj" />
   <Import Project="$(common)package-info.proj" />
   <Import Project="$(common)package-fallback.proj" />
+  <PropertyGroup>
+    <Description>Microsoft.Perks is a collection of interesting classes.</Description>  
+  </PropertyGroup>  
 </Project>

@@ -6,6 +6,10 @@
   <Import Project="$(common)package-info.proj" />
   <Import Project="$(common)package-fallback.proj" />
 
+  <PropertyGroup>
+    <Description>Microsoft.Perks is a collection of interesting classes for async work.</Description>  
+  </PropertyGroup>  
+
   <ItemGroup>
     <ProjectReference Include="$(SolutionDir)src/Microsoft.Perks/Microsoft.Perks.csproj" />  
     <ProjectReference Include="$(SolutionDir)src/Microsoft.Perks.Linq/Microsoft.Perks.Linq.csproj" />  

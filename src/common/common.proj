@@ -1,5 +1,6 @@
 <Project ToolsVersion="15.0">
   <PropertyGroup Condition="$(Common) == '*Undefined*' OR $(Common) == '' " >
+    <VersionPrefix>1.0.15</VersionPrefix>
     <Common>$(MsBuildThisFileDirectory)</Common>
     <SolutionDir>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory),Perks.sln))/</SolutionDir>
   </PropertyGroup>

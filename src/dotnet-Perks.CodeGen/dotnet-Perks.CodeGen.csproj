@@ -1,9 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), common/common.proj ))/common/common.proj" />
+  <Import Project="$(common)package-info.proj" />
+
   <PropertyGroup>
+    <Copyright>Copyright (c) Microsoft Corporation</Copyright>
+    <Company>Microsoft</Company>
+    <Description>dotnet-Perks.Codegen tool for AzureSDK tooling</Description>
+    
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <TargetFrameworks>netcoreapp1.0;netstandard1.3</TargetFrameworks>
     <PackageType>DotnetCliTool</PackageType>
-  </PropertyGroup>
+  </PropertyGroup>  
+
   <ItemGroup>
     <EmbeddedResource Include="**/*.resx" />
   </ItemGroup>
