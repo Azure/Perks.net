@@ -102,7 +102,6 @@ namespace Microsoft.Perks.CodeGen
                     }
                     var includeFileName = source.Substring(startIndex + startMatch.Length,
                         endIndex - (startIndex + startMatch.Length));
-                    Console.WriteLine("    Inlining file {0}", includeFileName);
                     var replacement =
                         File.ReadAllText(Path.Combine(basePath, includeFileName))
                             .Replace("\"", "\\\"")
