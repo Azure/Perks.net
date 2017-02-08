@@ -6,7 +6,7 @@
     <PropertyGroup>
       <RazorCommand>dotnet Perks.CodeGen</RazorCommand>
     </PropertyGroup>
-    <Exec Command="$(RazorCommand) @(DotnetRazor) obj\Razor $(RootNamespace)" ConsoleToMSBuild="true">
+    <Exec Command='$(RazorCommand) "@(DotnetRazor)" obj/Razor $(RootNamespace)' ConsoleToMSBuild="true" StandardOutputImportance="Low">
       <Output TaskParameter="ConsoleOutput" ItemName="Compile" />
       <Output TaskParameter="ConsoleOutput" ItemName="FileWrites" />
     </Exec>
